@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    --main-yellow:#F7DF64;
+    --main-dark-grey:#373737;
+    --main-bright-grey:#7c7c7c;    
+}
+
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #eeeeee;
+    width: 100%;
+    height: 180px;
+}
+
+#header__content{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #373737;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header__content--logo{
+    max-height: 44px;
+    /*literally idk what should i code here yet*/
+}
+
+#header__contacts{
+    width: 350px;
+    border: 1px solid black;
+}
+
+#header__contacts--adress{
+/**/
+}
+
+#adress__header--link{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 2px dashed black;
+    font-size: 24px;
+}
