@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12 Вольт Pro | Шумоизоляция тонировка сигнализация установка в Самаре</title>
     <link rel="stylesheet" href="styles/main_desktop.css">
-    <link rel="stylesheet" href="styles/main_mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="styles/main_mobile.css">
 </head>
 <body>
     <div id="header">
@@ -20,39 +20,75 @@
             <div id="header__contacts">
                 <div id="header__contacts--adress">
                     <img src="img/ICONS/location.svg" alt="Адрес самара 12 вольт про" id="header_loc_icon">
-                    <a href="#" id="adress__header--link">
-                        ул. Партизанская, 44
-                    </a>
+                    <a href="#" id="adress__header--link">ул. Партизанская, 44</a>
                 </div>
                 <div id="header__contacts--time">
                     <img src="img/ICONS/clock.svg" alt="Режим работы самара 12 вольт про" id="header_time_icon">
-                    <span id="adress__header--adress_text">Пн-Вс с 9:00 - 20:00</span>
+                    <span id="adress__header--regym_text">Пн-Вс с 9:00 - 20:00</span>
                 </div>
             </div>
             <!-- end of CONTACTS_HEADER block -->
 
             <!-- CALL_HEADER block-->
             <div id="header__call">
-                <a id="tel:+79272003666" id="header__call--phone">+7&nbsp;(927)&nbsp;200-36-66</a>
+                <a href="tel:+79272003666" id="header__call--phone">+7&nbsp;(927)&nbsp;200-36-66</a>
+            </div>
+            <!-- end of CALL_HEADER block-->
+
+            <!-- CART block -->
+            <!--<div id="header__cart--button">
+                <img id="header__cart--buttonSVG" src="img/ICONS/cart.svg">
+                <div id="cart__price">
+                    <p id="cart__price--sum">0</p>
+                    <p id="cart__price--currency">руб.</p>
+                </div>
+            </div>-->
+            <div id="header__cart">
                 <div id="reverseCall_BUTTON">
                     <img src="img/ICONS/phone.svg" alt="позвонить 12 вольт про самара">
                     <p id="reverseCall_Button__text">Обратный&nbsp;звонок</p>
                 </div>
             </div>
-            <!-- end of CALL_HEADER block-->
+            <!-- end of CART block -->
 
-            <!-- CART block-->
-            <div id="header__cart">
-                <div id="header__cart--button">
-                    <img id="header__cart--buttonSVG" src="img/ICONS/cart.svg">
-                    <div id="cart__price">
-                        <p id="cart__price--sum">0</p>
-                        <p id="cart__price--currency">руб.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end of CART block-->
+            <!-- menu icon block-->
+            <img src="img/ICONS/menu.svg" alt="" id="menu_mobile_icon">
+            <!-- end of menu icon block-->
+             <!-- menu cross block-->
+             <img src="img/ICONS/cross.svg" alt="" id="menu_mobile_cross">
+             <!-- end of menu cross block-->
         </div>
     </div>
+
+    <div id="menu">
+        <a href="#signalka" class="menu_item">сигнализация</a>
+        <a href="#" class="menu_item">автозвук</a>
+        <a href="#" class="menu_item">шумоизоляция</a>
+        <a href="#" class="menu_item">тонировка</a>
+        <a href="#" class="menu_item">отзывы</a>
+        <a href="#" class="menu_item">наши работы</a>
+        <a href="#" class="menu_item">контакты</a>        
+    </div>
+
+
+    <div id="screen">
+        <div id="screen__container">
+            <div id="screen__container--text">
+                <h1>Акция 2+1</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora incidunt cumque asperiores voluptas odio.</p>
+            </div>
+            <div id="screen__container--button">
+                <img id="screen__button--svg">
+                <div id="screen__button--text"></div>
+            </div>
+        </div>
+    </div>
+    <div id="signalka">
+        <div class="header_title">Защита автомобиля от угона</div>
+        <div class="header2_title">Цена установки сигнализации в Самаре</div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/common.js"></script>
 </body>
 </html>
