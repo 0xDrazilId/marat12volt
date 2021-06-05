@@ -1,6 +1,17 @@
+body{
+    /* max-width: 100vw;
+    overflow-x: hidden; */
+}
+
 #header{
     height: 80px;
     position:fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+#header_cart{
+    display: none;
 }
 
 #header__content{
@@ -17,32 +28,27 @@
     display: none;
 }
 
-#header__cart{
-    display: none;
-}
-
 #menu_mobile_icon{
+    position: relative;
+    right: 15px;
     display: block;
     width: 50px;
     cursor: pointer;
 }
 
-#menu{
-    width: 450px;
-    height: calc(100vh - 80px);
-    flex-flow: column nowrap;
-    align-content: flex-start;
-    justify-content: center;
-    filter: none;
-    position: relative;
-    top: 80px;
-    right: -450px;
-    transform: none;
-    margin-right: 0;
+.menu_item{
+    display: block;
+    font-size: 22px;
+    margin: 20px auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.menu_item{
-    font-size: 22px;
+.menu_item:hover{
+    border-bottom: -2px solid var(--main-yellow);
+    color: #fff;
+    background-color: rgb(90, 90, 90);
+    /*ADD ANIMATION*/
 }
 
 #menu_mobile_cross{
@@ -52,6 +58,85 @@
 }
 
 #screen{
-    position: absolute;
+    position: relative;
     top: 80px;
+    z-index: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 45px;
+}
+
+#menu{
+    display: none;
+}
+
+#signalka{
+    z-index: 0;
+}
+
+#menu_mobile{
+    display: block;
+    position: fixed;
+    max-width: 100%;
+}
+
+#reverseCall_BUTTON{
+    position: fixed;
+    bottom: 45px;
+    right: 40px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%; 
+    line-height: 65px;   
+    text-align: center;
+}
+
+#reverseCall_Button__text{
+    display: none;
+}
+
+.header_title{
+    max-width: 80vw;
+    font-size: 16px;
+    height: 60px;
+    color: var(--main-dark-grey);
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header2_title{
+    font-size: 18px;
+    top: -20px;
+}
+
+#reverseCall_Button__SVG{
+    /* margin: 0 auto; */
+}
+
+#screen__container{
+    top: 5%;
+}
+
+#screen__container--text > h1{
+    font-size: 32px;
+}
+
+#screen__container--text > p{
+    font-size: 22px;
+}
+
+
+.cards_container{    
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.marquee_container{
+    width: 95%;
+}
+
+.card1{
+    max-width: 98vw;
+    overflow-x: hidden;
 }

@@ -1,5 +1,5 @@
 $('#menu_mobile_icon').click(function() {
-    $('#menu').css({
+    $('#menu_mobile').css({
         'right': '0'
     });
 
@@ -13,7 +13,7 @@ $('#menu_mobile_icon').click(function() {
 });
 
 $('#menu_mobile_cross').click(function() {
-    $('#menu').css({
+    $('#menu_mobile').css({
         'right': '-450px'
     });
 
@@ -27,9 +27,9 @@ $('#menu_mobile_cross').click(function() {
 });
 
 $('.menu_item').click(function() {
-    // $('#menu').css({
-    //     'right': '-450px'
-    // });  /* РАЗОБРАТЬСЯ ЧТО ЗА ХУЙНЯ!!!!Ы */
+    $('#menu_mobile').css({
+         'right': '-450px'
+    });
 
     $('#menu_mobile_icon').css({
         'display': 'block'

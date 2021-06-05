@@ -9,6 +9,17 @@
     <link rel="stylesheet" media="screen and (max-width: 1000px)" href="styles/main_mobile.css">
 </head>
 <body>
+
+    <div id="menu_mobile">
+        <a href="#signalka" class="menu_item">сигнализация</a>
+        <a href="#" class="menu_item">автозвук</a>
+        <a href="#" class="menu_item">шумоизоляция</a>
+        <a href="#" class="menu_item">тонировка</a>
+        <a href="#" class="menu_item">отзывы</a>
+        <a href="#" class="menu_item">наши работы</a>
+        <a href="#" class="menu_item">контакты</a>        
+    </div>
+
     <div id="header">
         <div id="header__content">
 
@@ -33,24 +44,10 @@
             <div id="header__call">
                 <a href="tel:+79272003666" id="header__call--phone">+7&nbsp;(927)&nbsp;200-36-66</a>
             </div>
-            <!-- end of CALL_HEADER block-->
-
-            <!-- CART block -->
-            <!--<div id="header__cart--button">
-                <img id="header__cart--buttonSVG" src="img/ICONS/cart.svg">
-                <div id="cart__price">
-                    <p id="cart__price--sum">0</p>
-                    <p id="cart__price--currency">руб.</p>
-                </div>
-            </div>-->
-            <div id="header__cart">
-                <div id="reverseCall_BUTTON">
-                    <img src="img/ICONS/phone.svg" alt="позвонить 12 вольт про самара">
-                    <p id="reverseCall_Button__text">Обратный&nbsp;звонок</p>
-                </div>
+            <div id="reverseCall_BUTTON">
+                <img src="img/ICONS/phone.svg" alt="позвонить 12 вольт про самара" id="reverseCall_Button__SVG">
+                <p id="reverseCall_Button__text">Обратный&nbsp;звонок</p>
             </div>
-            <!-- end of CART block -->
-
             <!-- menu icon block-->
             <img src="img/ICONS/menu.svg" alt="" id="menu_mobile_icon">
             <!-- end of menu icon block-->
@@ -58,36 +55,140 @@
              <img src="img/ICONS/cross.svg" alt="" id="menu_mobile_cross">
              <!-- end of menu cross block-->
         </div>
-    </div>
-
-    <div id="menu">
-        <a href="#signalka" class="menu_item">сигнализация</a>
-        <a href="#" class="menu_item">автозвук</a>
-        <a href="#" class="menu_item">шумоизоляция</a>
-        <a href="#" class="menu_item">тонировка</a>
-        <a href="#" class="menu_item">отзывы</a>
-        <a href="#" class="menu_item">наши работы</a>
-        <a href="#" class="menu_item">контакты</a>        
-    </div>
-
-
+    </div>  
     <div id="screen">
+        <div id="menu">
+            <a href="#signalka_header" class="menu_item">сигнализация</a>
+            <a href="#" class="menu_item">автозвук</a>
+            <a href="#" class="menu_item">шумоизоляция</a>
+            <a href="#" class="menu_item">тонировка</a>
+            <a href="#" class="menu_item">отзывы</a>
+            <a href="#" class="menu_item">наши работы</a>
+            <a href="#" class="menu_item">контакты</a>        
+        </div>   
         <div id="screen__container">
             <div id="screen__container--text">
                 <h1>Акция 2+1</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora incidunt cumque asperiores voluptas odio.</p>
             </div>
             <div id="screen__container--button">
-                <img id="screen__button--svg">
-                <div id="screen__button--text"></div>
+                Записаться
             </div>
         </div>
     </div>
     <div id="signalka">
-        <div class="header_title">Защита автомобиля от угона</div>
+        <div class="header_title" id="signalka_header">Защита автомобиля от угона</div>
         <div class="header2_title">Цена установки сигнализации в Самаре</div>
+        <div class="cards_container">
+            <div class="card1" id='signalka1'>
+                <div class="curve">
+                    <p class="curve_text">Гранта | Калина-2  | Приора
+Нива |  Шеви-Нива</p>
+                </div>
+                <div class="card_button">4000 р.</div>
+            </div>
+            <div class="card1" id='signalka2'>
+                <div class="curve">
+                    <p class="curve_text">Установка сигнализации<br>На авто A, B, С-класса
+                </div>
+                <div class="card_button">5000 р.</div>
+            </div>
+            <div class="card1" id='signalka3'>
+                <div class="curve">
+                    <p class="curve_text">Установка сигнализации<br>На внедорожники</p>
+                </div>
+                <div class="card_button">7000 р.</div>
+            </div>
+            <div class="card1" id='signalka4'>
+                <div class="curve">
+                    <p class="curve_text">На авто D-класса<br>На кроссоверы</p>
+                </div>
+                <div class="card_button">6000 р.</div>
+            </div>
+            <div class="card1" id='signalka5'>
+                <div class="curve">
+                    <p class="curve_text">На Skoda Octavia, VW Jetta<br>Passat и т.п.</p>
+                </div>
+                <div class="card_button">8000 р.</div>
+            </div>
+        </div>
+        <div class="marquee_container">
+        <marquee>Установка сигнализации | Установка GSM сигнализации | Установка сигнализации с автозапуском |  Устано вка имм обилайзера | | Установка сигнализации с автозапуском |  Устано вка имм</marquee>
+        </div>
+        <div class="cards_container">
+            <div class="card2">
+                <img src="IMG/png_signalka/1.png" alt="" class="card2_image">
+                <h1 class="card2_title">StarLine A63 v2 ECO</h1>
+                <p class="card2_p">Автосигнализация, все необходимые комплектующие и установка! Предназначена для современных Lada в комплектации Норма.</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="IMG/png_signalka/2.png" alt="" class="card2_image">
+                <h1 class="card2_title">StarLine A63 v2 2CAN-2LIN</h1>
+                <p class="card2_p">Автосигнализация, все необходимые комплектующие и установка! Предназначена для Lada Vesta, Datsun, VW Polo и др. современных...</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="IMG/png_signalka/3.png" alt="" class="card2_image">
+                <h1 class="card2_title">StarLine A93 V2</h1>
+                <p class="card2_p">Охранно-телематический комплекс с интеллектуальным автозапуском, несканируемым диалоговым кодом управления, опциональными 2CAN...</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="IMG/png_signalka/4.png" alt="" class="card2_image">
+                <h1 class="card2_title">GPS-маяк StarLine М17</h1>
+                <p class="card2_p">Поисково-мониторинговый маяк StarLine M17 — охранно-мониторинговый маяк — это точность определения координат даже в...</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="IMG/png_signalka/5.png" alt="" class="card2_image">
+                <h1 class="card2_title">StarLine E96V2BT 2can+4LIN</h1>
+                <p class="card2_p">Надежный автомобильный охранно-телематический комплекс с интеллектуальным автозапуском с вашего смартфона.</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="IMG/png_signalka/6.png" alt="" class="card2_image">
+                <h1 class="card2_title">StarLine A63 v2 ECO</h1>
+                <p class="card2_p">Автосигнализация, все необходимые комплектующие и установка! Предназначена для современных Lada в комплектации Норма.</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="IMG/png_signalka/6.png" alt="" class="card2_image">
+                <h1 class="card2_title">StarLine A93 V2 GSM</h1>
+                <p class="card2_p">Автосигнализация с интеллектуальным автозапуском, несканируемым диалоговым кодом управления, GSM интерфейсом, опциональными...</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="IMG/png_signalka/7.png" alt="" class="card2_image">
+                <h1 class="card2_title">StarLine A63 v2 ECO</h1>
+                <p class="card2_p">Автосигнализация, все необходимые комплектующие и установка! Предназначена для современных Lada в комплектации Норма.</p>
+                <div class="card2_button">
+                    <p class="card2_button--text">6 650 р.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <br><br><br><br><br><br><br><br>
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <script src="scripts/common.js"></script>
 </body>

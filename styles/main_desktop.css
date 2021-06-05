@@ -11,9 +11,10 @@ font-family: 'Montserrat', sans-serif; */
     padding: 0px;
     --main-yellow:#F7DF64;
     --main-dark-grey:#373737;
-    --main-bright-grey:#7c7c7c;  
+    --main-bright-grey:#7c7c7c; 
+    --main-green: #0D6B1C;
     /*box-sizing: border-box; */
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
 
 body{
@@ -105,6 +106,7 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #reverseCall_BUTTON > img{
@@ -125,41 +127,6 @@ body{
 
 #header__cart{
     width: 150px;
-}
-/*
-#header__cart--button{
-    background: var(--main-bright-grey);
-    border-radius: 33px;
-    width: 154px;
-    height: 47px;
-    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-#header__cart--buttonSVG{
-    width: 27px;
-    height: 27px;
-}
-
-#cart__price{
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    margin-left: 10px;
-}
-
-#cart__price--sum, #cart__price--currency{
-    display: inline;
-}*/
-
-#menu_mobile_icon, #menu_mobile_cross{
-    display: none;
 }
 
 #menu{
@@ -204,16 +171,16 @@ body{
 
 #screen{
     position: relative;
-    top: -50px;
     width: 100%;
-    height: 500px;
+    /* min-height: 500px; */
+    height: 90vh;
     background: url('../IMG/screen.jpg') no-repeat center center;
     background-size: cover;
     z-index: 0;
 }
 
 #screen__container{
-    width: 320px;
+    max-width: 50%;
     height: 85px;
     position: relative;
     left: 15%;
@@ -226,24 +193,42 @@ body{
 }
 
 #screen__container--text > h1{
-    font-size: 36px;
+    font-size: 48px;
+    padding-bottom: 15px;
     color: var(--main-yellow);
 }
 
 #screen__container--text > p{
-    font-size: 22px;
+    padding-bottom: 15px;
+    font-size: 28px;
     color: white;
+}
+
+#screen__container--button{
+    margin-top: 15px;
+    width: 250px;
+    height: 50px;
+    background-color: var(--main-yellow);
+    color: var(--main-dark-grey);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    cursor: pointer; /*FOR WHAT?!*/
+    border-radius: 5px;
 }
 
 #signalka{
     position: relative;
-    display: block;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
+    /* top: 0px;
+    left: 0px; */
     width: 100%;
-    min-height: 100vw;
-    background-color: #C9E8FF;
+    min-height: 100vh;
+    background: url('../IMG/signalka.png') repeat-y center center fixed;
+    background-size: cover;
+    z-index: 0;
+    padding-bottom: 65px;
 }
 
 /*!!! HEADER TITLE !!!*/
@@ -265,13 +250,169 @@ body{
 
 .header2_title{
     position: relative;
-    top: 0px;
     display: block;
     /*margin-top: 50px; РАЗОБРАТЬСЯы*/ 
     left: 50%;
     transform: translateX(-50%);
-    color: #000000;
+    color: var(--main-dark-grey);
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
+}
+
+#menu_mobile{
+    display: none;
+    width: 450px;
+    height: calc(100vh - 80px);
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    filter: none;
+    position: absolute;
+    top: 80px;
+    right: -450px;
+    transform: none;
+    margin-right: 0;
+    background-color: var(--main-dark-grey);
+    padding-top: 10%;
+    z-index: 1;
+}
+
+#menu_mobile_cross, #menu_mobile_icon{
+    display: none;
+}
+
+.cards_container{
+    position: relative;
+    margin: 10px auto;
+    padding-right: 155px;
+    padding-left: 155px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.card1{
+    position: relative;
+    width: 400px;
+    height: 140px;
+    margin: 15px;
+    box-shadow: 0px 6px 10px 0px #0000006e;
+    background-color: #fff;
+}
+
+.curve{
+    position: relative;
+    top: 0px;
+    width: 400px;
+    height: 70%;
+    background: url('../IMG/ICONS/curve.png') no-repeat center top;
+    background-size: 100% auto;
+}
+
+.curve_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--main-dark-grey);
+    text-align: center;
+}
+
+.card_button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8px;
+    width: 140px;
+    height: 40px;
+    background-color: var(--main-dark-grey);
+    color: var(--main-yellow);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: 0px 6px 10px 0px #0000006e;
+    border-radius: 5px;
+}
+
+#signalka1{
+    background: url('../IMG/signal_cards/priora.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#signalka2{
+    background: url('../IMG/signal_cards/abc.png') no-repeat center center;    
+    background-size: 100% 100%;
+}
+
+#signalka3{
+    background: url('../IMG/signal_cards/vnedor.png') no-repeat center center;    
+    background-size: 100% 100%;
+}
+
+#signalka4{
+    background: url('../IMG/signal_cards/d.png') no-repeat center center;    
+    background-size: 100% 100%;
+}
+#signalka5{
+    background: url('../IMG/signal_cards/jetta.png') no-repeat center center;    
+    background-size: 100% 100%;
+}
+
+.marquee_container{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: var(--main-dark-grey);
+    color: var(--main-yellow);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 50px;
+}
+
+.card2{
+    position: relative;
+    width: 350px;
+    height: 530px;
+    margin: 5px;
+    box-shadow: 0px 12px 10px 0px #0000006e;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+.card2_image{
+    width: 350px;
+    height: 350px;
+}
+.card2_title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--main-dark-grey);
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+.card2_p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-bright-grey);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card2_button{
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    text-align: center;
+    color: var(--main-green);
+    background-color: var(--main-yellow);
+}
+.card2_button--text{
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
 }
