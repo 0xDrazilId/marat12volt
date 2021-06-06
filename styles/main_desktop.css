@@ -144,7 +144,7 @@ body{
     z-index: 1;
 }
 
-.menu_item{
+.menu_item, .menu_item_main{
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -377,7 +377,7 @@ body{
 .card2{
     position: relative;
     width: 350px;
-    height: 530px;
+    height: 537px;
     margin: 5px;
     box-shadow: 0px 12px 10px 0px #0000006e;
     background-color: #fff;
@@ -404,6 +404,9 @@ body{
     padding-right: 10px;
 }
 .card2_button{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
     height: 58px;
     line-height: 58px;
@@ -415,4 +418,176 @@ body{
     display: inline;
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
+}
+
+#avtozvuk{
+    position: relative;
+    /* top: 0px;
+    left: 0px; */
+    width: 100%;
+    min-height: 100vh;
+    background: url('../IMG/dj.png') repeat-y center center fixed;
+    background-size: cover;
+    z-index: 0;
+    padding-bottom: 65px;
+}
+
+#avtozvuk_header2{
+    color: #fff !important;
+}
+
+.avtozvuk{
+    background: url('../IMG/kolonki.jpg') no-repeat center center;    
+    background-size: 100% 100%;
+}
+
+.avtozvukCardP{
+    font-size: 13px !important;
+}
+
+.avtozvuk_button_text{
+    font-size: 20px;
+    color: var(--main-dark-grey);
+}
+
+ol{
+    color: var(--main-dark-grey);
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 8px;
+}
+
+ol > li{
+    color: var(--main-dark-grey);
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    margin-top: 2px;
+}
+
+#noize{
+    position: relative;
+    /* top: 0px;
+    left: 0px; */
+    width: 100%;
+    min-height: 100vh;
+    background: url('../IMG/NOIZE.png') repeat-y center center fixed;
+    background-size: cover;
+    z-index: 0;
+    padding-bottom: 65px;
+}
+
+.card_noize{
+    height: 480px;
+    border-radius: 15px;
+}
+
+.card_noize--h1{
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-dark-grey);
+}
+
+.NoizeCardP{
+    position: relative;
+    margin-top: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.noizePrice{
+    position: relative;
+    color: var(--main-green);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+}
+
+#toner{
+    position: relative;
+    /* top: 0px;
+    left: 0px; */
+    width: 100%;
+    height: auto;
+    background: url('../IMG/toner.jpg') repeat-y center center fixed;
+    background-size: cover;
+    z-index: 0;
+    padding-bottom: 125px;
+}
+
+#toner_header2{
+    color: #fff;
+    width: 620px;
+    margin-bottom: 30px;
+}
+
+.card_toner{
+    width: 350px;
+    height: 350px;
+}
+
+.tonerP{
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border-bottom: 3px dashed #fff;
+}
+
+.toner_h1{
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#work{
+    position: relative;
+    /* top: 0px;
+    left: 0px; */
+    width: 100%;
+    height: 650px;
+    background: url('../IMG/work.png') repeat-y center center fixed;
+    background-size: cover;
+    z-index: 0;
+    padding-bottom: 65px;
+}
+
+#carousel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-65%);
+    margin: 28px auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#carousel_container{
+    background: url("../IMG/motor.jpg") no-repeat center center;
+    background-size: cover;
+    width: 80%;
+    height: 475px;
+    box-shadow: 0px 12px 10px 0px rgb(0 0 0 / 58%);
+}
+
+.arrow{
+    margin: 0 15px;
+    cursor: pointer;
 }
