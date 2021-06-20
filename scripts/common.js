@@ -10,6 +10,10 @@ $('#menu_mobile_icon').click(function() {
     $('#menu_mobile_cross').css({
         'display': 'block'
     });
+
+    $('#reverseCall_BUTTON').css({
+        'display': 'none'
+    });
 });
 
 $('#menu_mobile_cross').click(function() {
@@ -24,6 +28,9 @@ $('#menu_mobile_cross').click(function() {
     $('#menu_mobile_cross').css({
         'display': 'none'
     });
+    $('#reverseCall_BUTTON').css({
+        'display': 'block'
+    });
 });
 
 $('.menu_item').click(function() {
@@ -37,6 +44,10 @@ $('.menu_item').click(function() {
 
     $('#menu_mobile_cross').css({
         'display': 'none'
+    });
+    
+    $('#reverseCall_BUTTON').css({
+        'display': 'block'
     });
 });
 

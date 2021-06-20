@@ -528,7 +528,6 @@ ol > li{
 
 #toner_header2{
     color: #fff;
-    width: 620px;
     margin-bottom: 30px;
 }
 
@@ -583,7 +582,7 @@ body {
 }
 
 #block-for-slider {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -650,30 +649,6 @@ body {
     background: url('../IMG/right_arrow.svg');
 }
 
-#nav-btns {
-    position: absolute;
-    width: 100%;
-    bottom: 20px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.slide-nav-btn {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background-color: var(--main-yellow);
-    border-radius: 50%;
-    margin: 3px;
-}
-
-.slide-nav-btn:hover {
-    cursor: pointer;
-}
-
 /*END OF SLIDER */
 
 
@@ -702,7 +677,8 @@ body {
     padding: 40px;
     padding-bottom: 60px;
     background: url('../IMG/ICONS/oblako.png') no-repeat center center;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: top;
     margin: 25px;
     border-radius: 35px;
 }
@@ -859,10 +835,11 @@ body {
     width: 300px;
     height: 350px;
     border-radius: 25px;
-    box-shadow: 0px 0px 15px 15px rgb(0 0 0 / 42%);
-    background: linear-gradient(-45deg, #F7DF64, #fff3b9, #F7DF64);
+    box-shadow: 0px 0px 18px 7px rgb(0 0 0 / 38%);
+    background: url("../IMG/menu_mobile_bg.png") no-repeat center center;
+    background-size: cover;
     z-index: 8;
-    color: #303030;
+    color: #ffffff;
     padding: 25px;
     transition: .55s display; /*НЕ РАБОТАЕТ*/
 }
@@ -892,33 +869,36 @@ body {
 
 #form_fio, #form_phone{
     height: 45px;
-    border: 0px;
     border-radius: 25px;
-    outline: none;
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
     margin: 15px;
     padding-left: 18px;
     width: 80%;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 24px;
+    background-color: rgba(255,255,255,.0);
+    border: 2px solid white;
+    color: white;
 }
 
 #form_submit{
     height: 45px;
-    border: 0px;
+    background-color: rgba(255,255,255,.0);
+    border: 2px solid var(--main-green);
     border-radius: 25px;
-    outline: none;
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
     margin: 15px;
     padding-left: 18px;
-    width: 80%;
-    background-color: var(--main-green);
-    color: white;
+    width: 90%;
+    color: var(--main-green);
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 24px;
     cursor: pointer;
+}
+
+#form_submit:hover{
+    background-color: var(--main-green);
+    color: white;
 }
 
 /*FORM ACTION BELOW*/

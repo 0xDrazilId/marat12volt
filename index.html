@@ -9,20 +9,20 @@
     <link rel="stylesheet" media="screen and (max-width: 1000px)" href="styles/main_mobile.css">
 </head>
 <body>
-
+ 
     <div id="screen_form">
         <form action="scripts/mail.php" method="post">
-            Заполните заявку<br>и Мы Вам позвоним!
+            Заполните заявку<br>и Мы Вам позвоним!<br><br>
             <input type="text" id="form_fio" name="fio" placeholder="Ваше имя" required>
-            <input type="text" id="form_phone" name="phone" placeholder="Номер телефона" title="XXX-XXX-XX-XX" required="" pattern="(\d[- .]*){7,13}">
+            <input type="text" id="form_phone" name="phone" placeholder="Номер телефона" title="XXX-XXX-XX-XX" required="" pattern="(\+7|8)[\s(]*\d{3}[)\s]*\d{3}[\s-]?\d{2}[\s-]?\d{2}">
             <input type="submit" id="form_submit" value="Отправить">
         </form>
         <div id="close_form">
-            <img src="IMG/cross.svg">
+            <img src="IMG/cross.png">
         </div>
     </div>
 
-    <div id="menu_mobile">
+     <div id="menu_mobile">
         <a href="#signalka_header" class="menu_item">сигнализация</a>
         <a href="#avtozvuk_header" class="menu_item">автозвук</a>
         <a href="#noize_header" class="menu_item">шумоизоляция</a>
@@ -31,12 +31,13 @@
         <a href="#review_header" class="menu_item">отзывы</a>
         <a href="#cont_header" class="menu_item">контакты</a> 
         <div id="menu_mobile_contacts">
-            <a href="#" id="menu_mobile--link">ул. Партизанская, 44</a>
+            <a href="https://yandex.ru/maps/-/CCUav4fypB" target="_blank" id="menu_mobile--link">ул. Партизанская, 44</a>
             <span id="menu_mobile--regym_text">Пн-Вс с 9:00 - 20:00</span>
+            <a href="tel:+79272003666" id="menu_mobile__call--phone">+7&nbsp;(927)&nbsp;200-36-66</a>
             <div class="cont_soc_img" style="margin-top:20px;">
-                <a href="https://vk.com/12volt_pro" target="_blank"><img src="IMG/ICONS/cont/vk.svg" alt="" class="cont_svg"></a>
-                <a href="https://www.instagram.com/12volt_pro/" target="_blank"><img src="IMG/ICONS/cont/inst.svg" alt="" class="cont_svg"></a>
-                <a href="https://2gis.ru/samara/firm/70000001026949742?m=50.165515%2C53.193272%2F17" target="_blank"><img src="IMG/ICONS/cont/2gis.svg" alt="" class="cont_svg"></a>
+                <a href="https://vk.com/12volt_pro" target="_blank"><img src="IMG/menu_contacts/vk.png" alt="" class="cont_svg"></a>
+                <a href="https://www.instagram.com/12volt_pro/" target="_blank"><img src="IMG/menu_contacts/inst.png" alt="" class="cont_svg"></a>
+                <a href="https://2gis.ru/samara/firm/70000001026949742?m=50.165515%2C53.193272%2F17" target="_blank"><img src="IMG/menu_contacts/loc.png" alt="" class="cont_svg"></a>
             </div>
         </div>       
     </div>
@@ -52,7 +53,7 @@
             <div id="header__contacts">
                 <div id="header__contacts--adress">
                     <img src="IMG/ICONS/location.svg" alt="Адрес самара 12 вольт про" id="header_loc_icon">
-                    <a href="#" id="adress__header--link">ул. Партизанская, 44</a>
+                    <a href="https://yandex.ru/maps/-/CCUav4fypB" id="adress__header--link">ул. Партизанская, 44</a>
                 </div>
                 <div id="header__contacts--time">
                     <img src="IMG/ICONS/clock.svg" alt="Режим работы самара 12 вольт про" id="header_time_icon">
@@ -77,6 +78,7 @@
              <!-- end of menu cross block-->
         </div>
     </div>  
+
     <div id="screen">
         <div id="menu">
             <a href="#signalka_header" class="menu_item_main">сигнализация</a>
@@ -98,6 +100,7 @@
             </div>
         </div>
     </div>
+
     <div id="signalka">
         <div class="header_title" id="signalka_header">Защита автомобиля от угона</div>
         <div class="header2_title">Цена установки сигнализации в Самаре</div>
@@ -211,6 +214,7 @@
             </div>
         </div>
     </div>
+    
     <div id="avtozvuk">
         <div class="header_title" id="avtozvuk_header">Автозвук</div>
         <div class="header2_title" id='avtozvuk_header2'>Цена установки аудиосистемы в Самаре</div>
@@ -422,13 +426,6 @@
                     <div id="prev-btn"></div>
                     <div id="next-btn"></div>
                 </div>
-    
-                <ul id="nav-btns">
-                    <li class="slide-nav-btn"></li>
-                    <li class="slide-nav-btn"></li>
-                    <li class="slide-nav-btn"></li>
-                    <li class="slide-nav-btn"></li>
-                </ul>
             </div>
         </div>
     </div>
@@ -489,7 +486,7 @@
                 </div>
                 <div class="cont_block" id="cont_adress">
                     <img src="IMG/ICONS/cont/loc.svg" alt="" class="cont_svg">
-                    <a href="https://2gis.ru/samara/firm/70000001026949742?m=50.165515%2C53.193272%2F17" target="_blank" class="cont_link" id="link_adr">Партизанская, 44</a>
+                    <a href="https://yandex.ru/maps/-/CCUav4fypB" target="_blank" class="cont_link" id="link_adr">Партизанская, 44</a>
                 </div>
             </div>
             <div class="cont_container--sub">
