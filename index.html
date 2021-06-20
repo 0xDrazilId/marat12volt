@@ -10,6 +10,18 @@
 </head>
 <body>
 
+    <div id="screen_form">
+        <form action="scripts/mail.php" method="post">
+            Заполните заявку<br>и Мы Вам позвоним!
+            <input type="text" id="form_fio" name="fio" placeholder="Ваше имя" required>
+            <input type="text" id="form_phone" name="phone" placeholder="Номер телефона" title="XXX-XXX-XX-XX" required="" pattern="(\d[- .]*){7,13}">
+            <input type="submit" id="form_submit" value="Отправить">
+        </form>
+        <div id="close_form">
+            <img src="IMG/cross.svg">
+        </div>
+    </div>
+
     <div id="menu_mobile">
         <a href="#signalka_header" class="menu_item">сигнализация</a>
         <a href="#avtozvuk_header" class="menu_item">автозвук</a>
@@ -17,7 +29,16 @@
         <a href="#toner_header" class="menu_item">тонировка</a>
         <a href="#work_header" class="menu_item">наши работы</a>
         <a href="#review_header" class="menu_item">отзывы</a>
-        <a href="#cont_header" class="menu_item">контакты</a>        
+        <a href="#cont_header" class="menu_item">контакты</a> 
+        <div id="menu_mobile_contacts">
+            <a href="#" id="menu_mobile--link">ул. Партизанская, 44</a>
+            <span id="menu_mobile--regym_text">Пн-Вс с 9:00 - 20:00</span>
+            <div class="cont_soc_img" style="margin-top:20px;">
+                <a href="https://vk.com/12volt_pro" target="_blank"><img src="IMG/ICONS/cont/vk.svg" alt="" class="cont_svg"></a>
+                <a href="https://www.instagram.com/12volt_pro/" target="_blank"><img src="IMG/ICONS/cont/inst.svg" alt="" class="cont_svg"></a>
+                <a href="https://2gis.ru/samara/firm/70000001026949742?m=50.165515%2C53.193272%2F17" target="_blank"><img src="IMG/ICONS/cont/2gis.svg" alt="" class="cont_svg"></a>
+            </div>
+        </div>       
     </div>
 
     <div id="header">
@@ -35,7 +56,7 @@
                 </div>
                 <div id="header__contacts--time">
                     <img src="IMG/ICONS/clock.svg" alt="Режим работы самара 12 вольт про" id="header_time_icon">
-                    <span id="adress__header--regym_text">Пн-Вс с 9:00 - 20:00</span>
+                    <span id="adress__header--regym_text">Пн-Сб с 8:00 - 20:00</span>
                 </div>
             </div>
             <!-- end of CONTACTS_HEADER block -->
@@ -65,7 +86,8 @@
             <a href="#work_header" class="menu_item_main">наши работы</a>
             <a href="#review_header" class="menu_item_main">отзывы</a>
             <a href="#cont_header" class="menu_item_main">контакты</a>        
-        </div>   
+        </div>           
+
         <div id="screen__container">
             <div id="screen__container--text">
                 <h1>Акция 2+1</h1>
@@ -113,7 +135,7 @@
             </div>
         </div>
         <div class="marquee_container">
-        <marquee>Установка сигнализации | Установка GSM сигнализации | Установка сигнализации с автозапуском |  Устано вка имм обилайзера | | Установка сигнализации с автозапуском |  Устано вка имм</marquee>
+        <marquee>Установка сигнализации | Установка GSM сигнализации | Установка сигнализации с автозапуском |  Установка иммобилайзера | Установка или демонтаж штатной сигнализации</marquee>
         </div>
         <div class="cards_container">
             <div class="card2">
@@ -234,7 +256,7 @@
 
         </div>
         <div class="marquee_container">
-            <marquee>Установка магнитолы | Установка/замена акустики | Установка/замена акустики | Установка сабвуфера | Установка усилит  | Установка сабвуфера | Установка усилителя</marquee>
+            <marquee>Установка магнитолы | Установка/замена акустики | Установка магнитолы 1-din | Установка сабвуфера | Установка усилителя  | Установка магнитолы 2-din | установка штатной акустической системы</marquee>
         </div>
         <div class="cards_container">
             <div class="card2">
@@ -349,7 +371,7 @@
             </div>
         </div>
         <div class="marquee_container">
-            <marquee>Комплексная шумоизоляция | Шумоизоляция багажника | Шумоизоляция панели | Шумоизоляция дверей | Шумоизоляция арок | шумоизоляция днища</marquee>
+            <marquee>Комплексная шумоизоляция | Шумоизоляция багажника | Шумоизоляция панели | Шумоизоляция дверей | Шумоизоляция арок | шумоизоляция днища | шумоизоляция крыши | шумоизоляция всего авто в круг в Самаре</marquee>
         </div>
     </div>
         
@@ -386,10 +408,14 @@
         <div id="block-for-slider">
             <div id="viewport">
                 <ul id="slidewrapper">
-                    <li class="slide"><img src="IMG/20190501_car-photos-1.jpg" alt="1" class="slide-img"></li>
-                    <li class="slide"><img src="IMG/motor.jpg" alt="2" class="slide-img"></li>
-                    <li class="slide"><img src="IMG/screen.jpg" alt="3" class="slide-img"></li>
-                    <li class="slide"><img src="IMG/toner2.jpg" alt="4" class="slide-img"></li>
+                    <li class="slide"><img src="IMG/our_works/1.jpg" alt="1" class="slide-img"></li>
+                    <li class="slide"><img src="IMG/our_works/2.jpg" alt="2" class="slide-img"></li>
+                    <li class="slide"><img src="IMG/our_works/3.jpg" alt="3" class="slide-img"></li>
+                    <li class="slide"><img src="IMG/our_works/4.jpg" alt="4" class="slide-img"></li>                    
+                    <li class="slide"><img src="IMG/our_works/5.jpg" alt="1" class="slide-img"></li>
+                    <li class="slide"><img src="IMG/our_works/6.jpg" alt="2" class="slide-img"></li>
+                    <li class="slide"><img src="IMG/our_works/7.jpg" alt="3" class="slide-img"></li>
+                    <li class="slide"><img src="IMG/our_works/8.jpg" alt="4" class="slide-img"></li>                    
                 </ul>
     
                 <div id="prev-next-btns">
@@ -450,6 +476,7 @@
                     </div>
                 </div>
             </div>
+            <h3 style="margin: 0 auto; text-align:center; font-family:'Montserrat', sans-serif; font-size: 18px;">Еще больше отзывов <a href="https://vk.com/album-51273696_271281207" target="_blank">здесь</a> и <a href="https://vk.com/album-51273696_271281829" target="_blank">здесь</a></h3>
     </div>
 
     <div id="cont">
@@ -462,7 +489,7 @@
                 </div>
                 <div class="cont_block" id="cont_adress">
                     <img src="IMG/ICONS/cont/loc.svg" alt="" class="cont_svg">
-                    <a href="#" target="_blank" class="cont_link" id="link_adr">Партизанская, 44</a>
+                    <a href="https://2gis.ru/samara/firm/70000001026949742?m=50.165515%2C53.193272%2F17" target="_blank" class="cont_link" id="link_adr">Партизанская, 44</a>
                 </div>
             </div>
             <div class="cont_container--sub">
@@ -471,10 +498,10 @@
                     <a href="mailto:tuning12voltpro@yandex.ru" class="cont_link" id="link_mail">tuning12voltpro@yandex.ru</a>
                 </div>
                 <div class="cont_block" id="cont_social">
-                    <div id="cont_soc_img">
-                        <a href="#" target="_blank"><img src="IMG/ICONS/cont/vk.svg" alt="" class="cont_svg"></a>
-                        <a href="#" target="_blank"><img src="IMG/ICONS/cont/inst.svg" alt="" class="cont_svg"></a>
-                        <a href="#" target="_blank"><img src="IMG/ICONS/cont/whatsup.svg" alt="" class="cont_svg"></a>
+                    <div class="cont_soc_img">
+                        <a href="https://vk.com/12volt_pro" target="_blank"><img src="IMG/ICONS/cont/vk.svg" alt="" class="cont_svg"></a>
+                        <a href="https://www.instagram.com/12volt_pro/" target="_blank"><img src="IMG/ICONS/cont/inst.svg" alt="" class="cont_svg"></a>
+                        <a href="https://2gis.ru/samara/firm/70000001026949742?m=50.165515%2C53.193272%2F17" target="_blank"><img src="IMG/ICONS/cont/2gis.svg" alt="" class="cont_svg"></a>
                     </div>
                     <a href="" class="cont_link" id="link_soc">Мы в социальных сетях</a>
                 </div>

@@ -1,6 +1,7 @@
 body{
-    /* max-width: 100vw;
-    overflow-x: hidden; */
+    position: absolute;
+    width: 100%;  
+    overflow-x: hidden;
 }
 
 #header{
@@ -75,9 +76,28 @@ body{
 }
 
 #menu_mobile{
-    display: block;
+    display: none;
     position: fixed;
-    max-width: 100%;
+}
+
+#menu_mobile_contacts{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.oblako_text{
+    font-size: 14px;
+}
+
+#menu_mobile--regym_text, #menu_mobile--link{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
 }
 
 #reverseCall_BUTTON{
