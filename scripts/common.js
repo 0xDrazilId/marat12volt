@@ -82,3 +82,35 @@ $('#close_form').click(function() {
          'display': 'none'
     });
 });
+
+/*END OF OVNOCODE */
+
+$('#expand_block_signal').click(function() {
+    $('#container_signal2').css({
+         'height': 'auto',
+         'overflow-y': 'visible'      
+    });
+    $('#expand_block_signal').css({
+        'display': 'none'        
+   });
+});
+
+$('#expand_block_zvuk').click(function() {
+    $('#container_zvuk_2').css({
+         'height': 'auto',
+         'overflow-y': 'visible'      
+    });
+    $('#expand_block_zvuk').css({
+        'display': 'none'        
+   });
+});
+
+$('#expand_block_noize').click(function() {
+    $('#container_noize_1').css({
+         'height': 'auto',
+         'overflow-y': 'visible'      
+    });
+    $('#expand_block_noize').css({
+        'display': 'none'        
+   });
+});

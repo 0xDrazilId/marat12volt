@@ -294,6 +294,10 @@ body{
     justify-content: center;
 }
 
+.expand_block{
+    display: none;
+}
+
 .card1{
     position: relative;
     width: 400px;
@@ -564,8 +568,8 @@ ol > li{
     position: relative;
     /* top: 0px;
     left: 0px; */
+    height: auto;
     width: 100%;
-    min-height: 650px;
     background: url('../IMG/work.png') repeat-y center center fixed;
     background-size: cover;
     z-index: 0;
